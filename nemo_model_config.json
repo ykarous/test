@@ -1,0 +1,11 @@
+{
+  "model_name": "nvidia/stt_en_fastconformer_ctc_large",
+  "model_type": "FastConformer CTC",
+  "languages": "Anglais",
+  "sample_rate": 16000,
+  "status": "ready",
+  "model_size": "463MB",
+  "cache_location": "C:\\Users\\lucas\\.cache\\huggingface\\hub\\models--nvidia--stt_en_fastconformer_ctc_large",
+  "download_date": "2025-08-27",
+  "notes": "Modèle FastConformer téléchargé et prêt à utiliser"
+}

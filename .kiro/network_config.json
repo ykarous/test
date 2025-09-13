@@ -1,0 +1,130 @@
+{
+  "config": {
+    "max_concurrent_downloads": 8,
+    "max_segments_per_download": 8,
+    "segment_size_mb": 20,
+    "connection_timeout": 30.0,
+    "read_timeout": 60.0,
+    "max_retries": 3,
+    "server_test_interval": 300.0,
+    "enable_compression": false,
+    "enable_http_cache": true,
+    "user_agent": "NetworkOptimizer/1.0",
+    "max_bandwidth_mbps": 100.0
+  },
+  "servers": {
+    "huggingface_main": {
+      "url": "https://huggingface.co",
+      "name": "Hugging Face Main",
+      "priority": 1,
+      "status": "online",
+      "latency_ms": 191.38312339782715,
+      "bandwidth_mbps": 0.0013602198529262283,
+      "success_rate": 1.0,
+      "last_tested": 1756243816.2653897,
+      "error_count": 0,
+      "total_requests": 3,
+      "metadata": {}
+    },
+    "huggingface_cdn": {
+      "url": "https://cdn-lfs.huggingface.co",
+      "name": "Hugging Face CDN",
+      "priority": 2,
+      "status": "slow",
+      "latency_ms": 0.0,
+      "bandwidth_mbps": 0.0,
+      "success_rate": 0.0,
+      "last_tested": 1756243815.9729567,
+      "error_count": 3,
+      "total_requests": 3,
+      "metadata": {}
+    },
+    "github_releases": {
+      "url": "https://github.com",
+      "name": "GitHub Releases",
+      "priority": 3,
+      "status": "online",
+      "latency_ms": 125.81324577331543,
+      "bandwidth_mbps": 0.14637944458863222,
+      "success_rate": 1.0,
+      "last_tested": 1756243816.15866,
+      "error_count": 0,
+      "total_requests": 1,
+      "metadata": {}
+    },
+    "nvidia_ngc": {
+      "url": "https://api.ngc.nvidia.com",
+      "name": "NVIDIA NGC",
+      "priority": 4,
+      "status": "slow",
+      "latency_ms": 0.0,
+      "bandwidth_mbps": 0.0,
+      "success_rate": 0.0,
+      "last_tested": 1756243816.5484095,
+      "error_count": 1,
+      "total_requests": 1,
+      "metadata": {}
+    },
+    "test_server": {
+      "url": "https://example.com",
+      "name": "Test Server",
+      "priority": 1,
+      "status": "slow",
+      "latency_ms": 50.0,
+      "bandwidth_mbps": 10.0,
+      "success_rate": 0.0,
+      "last_tested": 1756243816.317988,
+      "error_count": 1,
+      "total_requests": 1,
+      "metadata": {}
+    },
+    "fast_server": {
+      "url": "https://fast_server.com",
+      "name": "Serveur Rapide",
+      "priority": 1,
+      "status": "slow",
+      "latency_ms": 20.0,
+      "bandwidth_mbps": 50.0,
+      "success_rate": 0.0,
+      "last_tested": 1756243816.1932137,
+      "error_count": 1,
+      "total_requests": 1,
+      "metadata": {}
+    },
+    "slow_server": {
+      "url": "https://slow_server.com",
+      "name": "Serveur Lent",
+      "priority": 2,
+      "status": "slow",
+      "latency_ms": 200.0,
+      "bandwidth_mbps": 5.0,
+      "success_rate": 0.0,
+      "last_tested": 1756243816.23011,
+      "error_count": 1,
+      "total_requests": 1,
+      "metadata": {}
+    },
+    "offline_server": {
+      "url": "https://offline_server.com",
+      "name": "Serveur Hors Ligne",
+      "priority": 3,
+      "status": "slow",
+      "latency_ms": 0.0,
+      "bandwidth_mbps": 0.0,
+      "success_rate": 0.0,
+      "last_tested": 1756243816.2643893,
+      "error_count": 1,
+      "total_requests": 1,
+      "metadata": {}
+    }
+  },
+  "stats": {
+    "total_downloads": 14,
+    "successful_downloads": 14,
+    "total_bytes_downloaded": 3148873,
+    "total_download_time": 105.95960140228271,
+    "average_speed_mbps": 0.1720829522785008,
+    "compression_ratio": 1.0
+  },
+  "timestamp": 1756245335.8656685
+}

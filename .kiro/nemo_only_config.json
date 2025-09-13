@@ -1,0 +1,44 @@
+{
+  "version": "2.0",
+  "framework": "nvidia_nemo_only",
+  "description": "Configuration pour utiliser uniquement NVIDIA NeMo",
+  "transcription": {
+    "framework": "nemo",
+    "model_name": "nvidia/stt_conformer_ctc_large",
+    "language": "fr",
+    "batch_size": 1,
+    "enable_gpu": true,
+    "fallback_to_cpu": true,
+    "chunk_duration": 20.0,
+    "overlap": 2.0
+  },
+  "diarization": {
+    "framework": "nemo",
+    "model_name": "nvidia/speakerverification_speakernet",
+    "clustering_model": "nvidia/titanet_large",
+    "enable_vad": true,
+    "vad_model": "nvidia/vad_conformer",
+    "max_speakers": 10,
+    "min_speakers": 1
+  },
+  "audio_processing": {
+    "sample_rate": 16000,
+    "channels": 1,
+    "chunk_length_s": 30,
+    "overlap_s": 5,
+    "normalize_audio": true
+  },
+  "performance": {
+    "enable_optimizations": true,
+    "cache_models": true,
+    "parallel_processing": false,
+    "memory_limit_mb": 4096,
+    "timeout_seconds": 300
+  },
+  "fallback": {
+    "enable_fallback": true,
+    "fallback_transcription_model": "nvidia/stt_conformer_ctc_medium",
+    "fallback_diarization_model": "nvidia/titanet_small",
+    "max_fallback_attempts": 2
+  }
+}

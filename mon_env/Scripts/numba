@@ -1,0 +1,8 @@
+#!C:\Users\lucas\Downloads\VideoSubFinder_6.10_x64\SoniTranslate-0.5.0\mon_env\Scripts\python.exe
+# -*- coding: UTF-8 -*-
+from __future__ import print_function, division, absolute_import
+
+from numba.misc.numba_entry import main
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,10 @@
+{
+    "enable_source_separation": false,
+    "asr_model": "whisper-large-v3",
+    "ocr_model": "paddleocr",
+    "voice_cloning_model": "tortoise-tts",
+    "output_codec": "h264",
+    "output_bitrate": "5M",
+    "temp_directory": "./temp",
+    "max_memory_usage": 0.8
+}

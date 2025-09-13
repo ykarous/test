@@ -1,0 +1,6 @@
+@echo off
+echo Activation de l'environnement virtuel...
+call mon_env\Scripts\activate.bat
+echo Lancement de l'application...
+python main.py --gui
+pause

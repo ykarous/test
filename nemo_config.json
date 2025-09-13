@@ -1,0 +1,13 @@
+{
+  "asr_engine": "nemo",
+  "nemo_models": {
+    "french": "nemo-conformer-ctc-large-fr",
+    "english": "nemo-conformer-ctc-large-en",
+    "multilingual": "nemo-conformer-ctc-large-multilingual"
+  },
+  "device": "auto",
+  "enable_gpu": true,
+  "batch_size": 1,
+  "enable_diarization": true,
+  "diarization_model": "nemo-titanet-large"
+}

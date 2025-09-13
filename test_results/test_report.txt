@@ -1,0 +1,35 @@
+================================================================================
+RAPPORT DE TESTS COMPLET - APPLICATION DOUBLAGE VIDÉO IA
+================================================================================
+Date d'exécution: 2025-08-23 15:17:38
+Durée totale: 0.12 secondes
+
+STATISTIQUES GLOBALES:
+  Tests exécutés: 23
+  Succès: 7
+  Échecs: 7
+  Erreurs: 9
+  Ignorés: 0
+  Taux de succès global: 30.4%
+
+RÉSULTATS PAR SUITE:
+----------------------------------------
+❌ Tests Unitaires:
+   Tests: 23
+   Taux de succès: 30.4%
+   Durée: 0.12s
+
+   PROBLÈMES DÉTECTÉS:
+     - TestDataModelsUnit: 1 échecs, 1 erreurs
+     - TestFileManagerUnit: 3 échecs, 1 erreurs
+     - TestVideoProcessorUnit: 0 échecs, 3 erreurs
+     - TestAudioProcessorUnit: 1 échecs, 2 erreurs
+     - TestAIModelManagerUnit: 2 échecs, 2 erreurs
+
+RECOMMANDATIONS:
+--------------------
+❌ Qualité insuffisante - Corrections urgentes nécessaires
+- Corriger 7 échecs de tests
+- Résoudre 9 erreurs de tests
+
+================================================================================

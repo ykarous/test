@@ -1,0 +1,21 @@
+{
+  "config": {
+    "monitoring_interval": 30.0,
+    "health_check_interval": 60.0,
+    "alert_retention_hours": 24,
+    "max_alerts_per_rule": 10,
+    "enable_proactive_cleanup": true,
+    "enable_automatic_optimization": true,
+    "critical_memory_threshold": 0.4,
+    "critical_disk_threshold": 0.9,
+    "critical_cpu_threshold": 0.3,
+    "gpu_temperature_threshold": 85.0
+  },
+  "stats": {
+    "alerts_generated": 23,
+    "problems_prevented": 16,
+    "automatic_optimizations": 0,
+    "false_positives": 0
+  },
+  "timestamp": 1756245335.863674
+}

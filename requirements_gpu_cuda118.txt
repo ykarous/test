@@ -1,0 +1,11 @@
+# Requirements pour GPU avec CUDA 11.8
+# Installation: pip install -r requirements_gpu_cuda118.txt
+
+# PyTorch avec support CUDA 11.8
+--index-url https://download.pytorch.org/whl/cu118
+torch>=2.5.0
+torchvision>=0.20.0
+torchaudio>=2.5.0
+
+# Puis installer les autres dépendances
+-r requirements.txt

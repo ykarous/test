@@ -1,0 +1,89 @@
+# Dépendances principales pour l'application de doublage vidéo par IA
+# 
+# INSTALLATION PYTORCH (CHOISIR UNE OPTION) :
+# 
+# 🚀 AUTOMATIQUE (recommandé) :
+#    Windows: install_pytorch.bat
+#    Linux/Mac: python install_pytorch.py
+#
+# 🔧 MANUEL selon votre GPU :
+#    GPU CUDA 12.1+: pip install -r requirements_gpu_cuda121.txt
+#    GPU CUDA 11.8 : pip install -r requirements_gpu_cuda118.txt  
+#    CPU seulement : pip install -r requirements_cpu.txt
+#
+# 📖 Voir INSTALL_PYTORCH.md pour plus de détails
+#
+# INSTALLATION NVIDIA NEMO (optionnel mais recommandé) :
+# - Windows: double-cliquer sur install_nemo.bat
+# - Linux/Mac: python install_nemo.py  
+# - Manuel: pip install -r requirements_nemo.txt
+#
+# Interface graphique
+PyQt5>=5.15.0
+PyQt5-Qt5>=5.15.0
+PyQt5-sip>=12.8.0
+
+# Traitement audio/vidéo
+opencv-python>=4.8.0
+librosa>=0.10.0
+soundfile>=0.12.0
+pydub>=0.25.0
+moviepy>=1.0.3
+
+# IA et Machine Learning
+# PyTorch - Installer selon votre matériel (voir instructions en haut)
+# torch>=2.0.0  # Commenté - installer manuellement selon GPU/CPU
+# torchaudio>=2.0.0  # Commenté - installer manuellement selon GPU/CPU  
+# torchvision>=0.15.0  # Commenté - installer manuellement selon GPU/CPU
+transformers>=4.30.0
+openai-whisper>=20231117
+sentence-transformers>=2.2.0
+
+# OCR
+paddleocr>=2.7.0
+easyocr>=1.7.0
+Pillow>=10.0.0
+
+# Traitement de données
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# Utilitaires système
+psutil>=5.9.0
+requests>=2.31.0
+tqdm>=4.65.0
+pathlib2>=2.3.0
+
+# Formats de fichiers
+python-docx>=0.8.11
+openpyxl>=3.1.0
+
+# Développement et tests
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# NVIDIA NeMo pour ASR et Diarisation avancées
+nemo-toolkit[asr]>=1.22.0
+pyannote.audio>=3.1.0
+pyannote.core>=5.0.0
+pyannote.database>=5.0.0
+pyannote.metrics>=3.2.0
+
+# Dépendances NeMo spécifiques
+omegaconf>=2.3.0
+hydra-core>=1.3.0
+pytorch-lightning>=2.0.0,<2.2.0
+numba>=0.57.0
+
+# Accélération GPU NVIDIA
+nvidia-ml-py>=12.535.0
+accelerate>=0.20.0
+optimum>=1.12.0
+
+# Support amélioré pour les modèles multimodaux LM Studio
+aiohttp>=3.8.0
+
+# Monitoring et métriques
+tensorboard>=2.13.0
+wandb>=0.15.0

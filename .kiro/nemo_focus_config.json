@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "mode": "nemo_only",
+  "description": "Configuration focalis\u00e9e sur NeMo sans Pyannote",
+  "audio_processing": {
+    "disable_diarization": true,
+    "assume_single_speaker": true,
+    "chunk_duration_seconds": 30,
+    "overlap_seconds": 2
+  },
+  "nemo_settings": {
+    "model_name": "nvidia/stt_conformer_ctc_small",
+    "batch_size": 1,
+    "enable_gpu": true,
+    "fallback_to_cpu": true,
+    "max_audio_length": 300
+  },
+  "fallback_options": {
+    "use_whisper_if_nemo_fails": true,
+    "whisper_model": "base",
+    "timeout_seconds": 120
+  },
+  "performance": {
+    "enable_optimizations": true,
+    "cache_models": true,
+    "parallel_processing": false,
+    "memory_limit_mb": 2048
+  }
+}

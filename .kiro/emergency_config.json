@@ -1,0 +1,12 @@
+{
+  "emergency_mode": true,
+  "timestamp": 1756245335.8666654,
+  "config": {
+    "enable_automatic_optimization": false,
+    "max_concurrent_downloads": 1,
+    "cache_size_mb": 128,
+    "enable_compression": false,
+    "enable_http_cache": false,
+    "monitoring_interval": 600.0
+  }
+}

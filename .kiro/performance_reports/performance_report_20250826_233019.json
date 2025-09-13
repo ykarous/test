@@ -1,0 +1,438 @@
+{
+  "timestamp": 1756243819.1000967,
+  "total_duration": 7.674280643463135,
+  "test_summary": {
+    "total_tests": 8,
+    "successful_tests": 7,
+    "failed_tests": 1,
+    "success_rate": 0.875
+  },
+  "performance_metrics": {
+    "cache_hit_rate": {
+      "value": 1.0,
+      "unit": "ratio",
+      "description": "Taux de hit du cache",
+      "improvement_percent": 66.66666666666667,
+      "meets_target": true,
+      "baseline": 0.6,
+      "target": 0.85
+    },
+    "cache_write_time": {
+      "value": 0.0,
+      "unit": "ms",
+      "description": "Temps moyen d'\u00e9criture en cache",
+      "improvement_percent": null,
+      "meets_target": null,
+      "baseline": null,
+      "target": null
+    },
+    "cache_read_time": {
+      "value": 0.0,
+      "unit": "ms",
+      "description": "Temps moyen de lecture du cache",
+      "improvement_percent": null,
+      "meets_target": null,
+      "baseline": null,
+      "target": null
+    },
+    "cache_memory_usage": {
+      "value": 1.1348724365234375,
+      "unit": "MB",
+      "description": "Utilisation m\u00e9moire du cache",
+      "improvement_percent": null,
+      "meets_target": null,
+      "baseline": null,
+      "target": null
+    },
+    "memory_usage_mb": {
+      "value": 7779.64453125,
+      "unit": "MB",
+      "description": "Utilisation m\u00e9moire apr\u00e8s optimisation",
+      "improvement_percent": 279.8654556274414,
+      "meets_target": true,
+      "baseline": 2048,
+      "target": 1536
+    },
+    "memory_saved_mb": {
+      "value": -0.3359375,
+      "unit": "MB",
+      "description": "M\u00e9moire \u00e9conomis\u00e9e par l'optimisation",
+      "improvement_percent": null,
+      "meets_target": null,
+      "baseline": null,
+      "target": null
+    },
+    "optimization_time": {
+      "value": 0.0039882659912109375,
+      "unit": "s",
+      "description": "Temps d'ex\u00e9cution de l'optimisation",
+      "improvement_percent": null,
+      "meets_target": null,
+      "baseline": null,
+      "target": null
+    },
+    "download_speed_mbps": {
+      "value": 0.00298293871177811,
+      "unit": "Mbps",
+      "description": "Vitesse de t\u00e9l\u00e9chargement",
+      "improvement_percent": -99.97017061288223,
+      "meets_target": false,
+      "baseline": 10,
+      "target": 25
+    },
+    "server_test_time": {
+      "value": 0.6327250003814697,
+      "unit": "s",
+      "description": "Temps de test des serveurs",
+      "improvement_percent": null,
+      "meets_target": null,
+      "baseline": null,
+      "target": null
+    },
+    "average_latency": {
+      "value": 158.5981845855713,
+      "unit": "ms",
+      "description": "Latence moyenne des serveurs",
+      "improvement_percent": null,
+      "meets_target": null,
+      "baseline": null,
+      "target": null
+    },
+    "optimization_frequency_per_hour": {
+      "value": 712247.0211983132,
+      "unit": "ops/hour",
+      "description": "Fr\u00e9quence d'optimisation par heure",
+      "improvement_percent": 35612251.05991566,
+      "meets_target": true,
+      "baseline": 2,
+      "target": 6
+    },
+    "avg_optimization_time": {
+      "value": 0.0050544261932373045,
+      "unit": "s",
+      "description": "Temps moyen d'optimisation",
+      "improvement_percent": null,
+      "meets_target": null,
+      "baseline": null,
+      "target": null
+    },
+    "concurrent_operations": {
+      "value": 8,
+      "unit": "ops",
+      "description": "Nombre d'op\u00e9rations concurrentes",
+      "improvement_percent": 300.0,
+      "meets_target": true,
+      "baseline": 2,
+      "target": 8
+    },
+    "concurrent_execution_time": {
+      "value": 0.0009975433349609375,
+      "unit": "s",
+      "description": "Temps d'ex\u00e9cution concurrente",
+      "improvement_percent": null,
+      "meets_target": null,
+      "baseline": null,
+      "target": null
+    },
+    "cache_hit_rate_concurrent": {
+      "value": 1.0,
+      "unit": "ratio",
+      "description": "Taux de hit en mode concurrent",
+      "improvement_percent": null,
+      "meets_target": null,
+      "baseline": null,
+      "target": null
+    },
+    "system_responsiveness_ms": {
+      "value": 0.0,
+      "unit": "ms",
+      "description": "Temps de r\u00e9ponse moyen du syst\u00e8me",
+      "improvement_percent": -100.0,
+      "meets_target": false,
+      "baseline": 500,
+      "target": 200
+    },
+    "max_response_time": {
+      "value": 0.0,
+      "unit": "ms",
+      "description": "Temps de r\u00e9ponse maximum",
+      "improvement_percent": null,
+      "meets_target": null,
+      "baseline": null,
+      "target": null
+    },
+    "min_response_time": {
+      "value": 0.0,
+      "unit": "ms",
+      "description": "Temps de r\u00e9ponse minimum",
+      "improvement_percent": null,
+      "meets_target": null,
+      "baseline": null,
+      "target": null
+    },
+    "integration_time": {
+      "value": 1.0521562099456787,
+      "unit": "s",
+      "description": "Temps d'int\u00e9gration compl\u00e8te",
+      "improvement_percent": null,
+      "meets_target": null,
+      "baseline": null,
+      "target": null
+    },
+    "integration_success_rate": {
+      "value": 1.0,
+      "unit": "ratio",
+      "description": "Taux de succ\u00e8s d'int\u00e9gration",
+      "improvement_percent": null,
+      "meets_target": null,
+      "baseline": null,
+      "target": null
+    },
+    "components_active": {
+      "value": 3,
+      "unit": "count",
+      "description": "Nombre de composants actifs",
+      "improvement_percent": null,
+      "meets_target": null,
+      "baseline": null,
+      "target": null
+    }
+  },
+  "test_results": [
+    {
+      "test_name": "cache_performance",
+      "duration": 2.369004726409912,
+      "success": true,
+      "error_message": null,
+      "metrics": [
+        {
+          "name": "cache_hit_rate",
+          "value": 1.0,
+          "unit": "ratio",
+          "description": "Taux de hit du cache",
+          "improvement_percent": 66.66666666666667,
+          "meets_target": true
+        },
+        {
+          "name": "cache_write_time",
+          "value": 0.0,
+          "unit": "ms",
+          "description": "Temps moyen d'\u00e9criture en cache",
+          "improvement_percent": null,
+          "meets_target": null
+        },
+        {
+          "name": "cache_read_time",
+          "value": 0.0,
+          "unit": "ms",
+          "description": "Temps moyen de lecture du cache",
+          "improvement_percent": null,
+          "meets_target": null
+        },
+        {
+          "name": "cache_memory_usage",
+          "value": 1.1348724365234375,
+          "unit": "MB",
+          "description": "Utilisation m\u00e9moire du cache",
+          "improvement_percent": null,
+          "meets_target": null
+        }
+      ]
+    },
+    {
+      "test_name": "memory_optimization",
+      "duration": 0.017952680587768555,
+      "success": true,
+      "error_message": null,
+      "metrics": [
+        {
+          "name": "memory_usage_mb",
+          "value": 7779.64453125,
+          "unit": "MB",
+          "description": "Utilisation m\u00e9moire apr\u00e8s optimisation",
+          "improvement_percent": 279.8654556274414,
+          "meets_target": true
+        },
+        {
+          "name": "memory_saved_mb",
+          "value": -0.3359375,
+          "unit": "MB",
+          "description": "M\u00e9moire \u00e9conomis\u00e9e par l'optimisation",
+          "improvement_percent": null,
+          "meets_target": null
+        },
+        {
+          "name": "optimization_time",
+          "value": 0.0039882659912109375,
+          "unit": "s",
+          "description": "Temps d'ex\u00e9cution de l'optimisation",
+          "improvement_percent": null,
+          "meets_target": null
+        }
+      ]
+    },
+    {
+      "test_name": "network_performance",
+      "duration": 1.7349598407745361,
+      "success": true,
+      "error_message": null,
+      "metrics": [
+        {
+          "name": "download_speed_mbps",
+          "value": 0.00298293871177811,
+          "unit": "Mbps",
+          "description": "Vitesse de t\u00e9l\u00e9chargement",
+          "improvement_percent": -99.97017061288223,
+          "meets_target": false
+        },
+        {
+          "name": "server_test_time",
+          "value": 0.6327250003814697,
+          "unit": "s",
+          "description": "Temps de test des serveurs",
+          "improvement_percent": null,
+          "meets_target": null
+        },
+        {
+          "name": "average_latency",
+          "value": 158.5981845855713,
+          "unit": "ms",
+          "description": "Latence moyenne des serveurs",
+          "improvement_percent": null,
+          "meets_target": null
+        }
+      ]
+    },
+    {
+      "test_name": "error_recovery_performance",
+      "duration": 0.007980823516845703,
+      "success": false,
+      "error_message": "unexpected indent (error_recovery_manager.py, line 1076)",
+      "metrics": []
+    },
+    {
+      "test_name": "auto_optimization_performance",
+      "duration": 1.4583344459533691,
+      "success": true,
+      "error_message": null,
+      "metrics": [
+        {
+          "name": "optimization_frequency_per_hour",
+          "value": 712247.0211983132,
+          "unit": "ops/hour",
+          "description": "Fr\u00e9quence d'optimisation par heure",
+          "improvement_percent": 35612251.05991566,
+          "meets_target": true
+        },
+        {
+          "name": "avg_optimization_time",
+          "value": 0.0050544261932373045,
+          "unit": "s",
+          "description": "Temps moyen d'optimisation",
+          "improvement_percent": null,
+          "meets_target": null
+        }
+      ]
+    },
+    {
+      "test_name": "concurrent_operations",
+      "duration": 0.0029916763305664062,
+      "success": true,
+      "error_message": null,
+      "metrics": [
+        {
+          "name": "concurrent_operations",
+          "value": 8,
+          "unit": "ops",
+          "description": "Nombre d'op\u00e9rations concurrentes",
+          "improvement_percent": 300.0,
+          "meets_target": true
+        },
+        {
+          "name": "concurrent_execution_time",
+          "value": 0.0009975433349609375,
+          "unit": "s",
+          "description": "Temps d'ex\u00e9cution concurrente",
+          "improvement_percent": null,
+          "meets_target": null
+        },
+        {
+          "name": "cache_hit_rate_concurrent",
+          "value": 1.0,
+          "unit": "ratio",
+          "description": "Taux de hit en mode concurrent",
+          "improvement_percent": null,
+          "meets_target": null
+        }
+      ]
+    },
+    {
+      "test_name": "system_responsiveness",
+      "duration": 0.011396408081054688,
+      "success": true,
+      "error_message": null,
+      "metrics": [
+        {
+          "name": "system_responsiveness_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "description": "Temps de r\u00e9ponse moyen du syst\u00e8me",
+          "improvement_percent": -100.0,
+          "meets_target": false
+        },
+        {
+          "name": "max_response_time",
+          "value": 0.0,
+          "unit": "ms",
+          "description": "Temps de r\u00e9ponse maximum",
+          "improvement_percent": null,
+          "meets_target": null
+        },
+        {
+          "name": "min_response_time",
+          "value": 0.0,
+          "unit": "ms",
+          "description": "Temps de r\u00e9ponse minimum",
+          "improvement_percent": null,
+          "meets_target": null
+        }
+      ]
+    },
+    {
+      "test_name": "integration_performance",
+      "duration": 1.0531532764434814,
+      "success": true,
+      "error_message": null,
+      "metrics": [
+        {
+          "name": "integration_time",
+          "value": 1.0521562099456787,
+          "unit": "s",
+          "description": "Temps d'int\u00e9gration compl\u00e8te",
+          "improvement_percent": null,
+          "meets_target": null
+        },
+        {
+          "name": "integration_success_rate",
+          "value": 1.0,
+          "unit": "ratio",
+          "description": "Taux de succ\u00e8s d'int\u00e9gration",
+          "improvement_percent": null,
+          "meets_target": null
+        },
+        {
+          "name": "components_active",
+          "value": 3,
+          "unit": "count",
+          "description": "Nombre de composants actifs",
+          "improvement_percent": null,
+          "meets_target": null
+        }
+      ]
+    }
+  ],
+  "recommendations": [
+    "Am\u00e9liorer Vitesse de t\u00e9l\u00e9chargement (actuel: 0.00, cible: 25.00)",
+    "Am\u00e9liorer Temps de r\u00e9ponse moyen du syst\u00e8me (actuel: 0.00, cible: 200.00)"
+  ]
+}

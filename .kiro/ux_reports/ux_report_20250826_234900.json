@@ -1,0 +1,82 @@
+{
+  "timestamp": 1756244940.9788332,
+  "total_duration": 23.016990184783936,
+  "summary": {
+    "total_scenarios": 6,
+    "successful_scenarios": 5,
+    "success_rate": 0.8333333333333334,
+    "average_satisfaction_score": 9.583333333333334,
+    "total_issues": 1,
+    "step_completion_rate": 96.66666666666667
+  },
+  "scenario_results": [
+    {
+      "name": "first_time_user",
+      "success": true,
+      "duration": 7.7729432582855225,
+      "satisfaction_score": 10.0,
+      "steps_completed": 5,
+      "total_steps": 5,
+      "issues_count": 0,
+      "recommendations_count": 1
+    },
+    {
+      "name": "power_user_workflow",
+      "success": true,
+      "duration": 1.0090789794921875,
+      "satisfaction_score": 10.0,
+      "steps_completed": 5,
+      "total_steps": 5,
+      "issues_count": 0,
+      "recommendations_count": 1
+    },
+    {
+      "name": "error_recovery_scenario",
+      "success": true,
+      "duration": 4.1232311725616455,
+      "satisfaction_score": 10.0,
+      "steps_completed": 5,
+      "total_steps": 5,
+      "issues_count": 0,
+      "recommendations_count": 1
+    },
+    {
+      "name": "performance_optimization",
+      "success": false,
+      "duration": 1.0151104927062988,
+      "satisfaction_score": 7.5,
+      "steps_completed": 4,
+      "total_steps": 5,
+      "issues_count": 1,
+      "recommendations_count": 1
+    },
+    {
+      "name": "network_resilience",
+      "success": true,
+      "duration": 6.046581983566284,
+      "satisfaction_score": 10.0,
+      "steps_completed": 5,
+      "total_steps": 5,
+      "issues_count": 0,
+      "recommendations_count": 1
+    },
+    {
+      "name": "system_integration",
+      "success": true,
+      "duration": 3.041325330734253,
+      "satisfaction_score": 10.0,
+      "steps_completed": 5,
+      "total_steps": 5,
+      "issues_count": 0,
+      "recommendations_count": 1
+    }
+  ],
+  "global_recommendations": [
+    "Corriger les sc\u00e9narios \u00e9chou\u00e9s pour am\u00e9liorer la fiabilit\u00e9"
+  ],
+  "performance_metrics": {
+    "average_scenario_duration": 3.8347118695576987,
+    "step_completion_rate": 96.66666666666667,
+    "issues_per_scenario": 0.16666666666666666
+  }
+}

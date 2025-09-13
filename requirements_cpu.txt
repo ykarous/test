@@ -1,0 +1,11 @@
+# Requirements pour CPU seulement
+# Installation: pip install -r requirements_cpu.txt
+
+# PyTorch version CPU
+--index-url https://download.pytorch.org/whl/cpu
+torch>=2.5.0
+torchvision>=0.20.0
+torchaudio>=2.5.0
+
+# Puis installer les autres dépendances
+-r requirements.txt

@@ -1,0 +1,137 @@
+{
+  "unit": {
+    "name": "Tests Unitaires",
+    "start_time": 1755955058.8033655,
+    "test_classes": [
+      {
+        "class_name": "TestDataModelsUnit",
+        "tests_run": 7,
+        "failures": 1,
+        "errors": 1,
+        "skipped": 0,
+        "success_rate": 71.42857142857143,
+        "failure_details": [
+          {
+            "test": "test_dialogue_segment_properties (tests.test_comprehensive_unit_suite.TestDataModelsUnit.test_dialogue_segment_properties)",
+            "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\lucas\\Downloads\\VideoSubFinder_6.10_x64\\videoimage\\SoniTranslate-0.5.0\\tests\\test_comprehensive_unit_suite.py\", line 68, in test_dialogue_segment_properties\n    self.assertEqual(segment.duration, 5.3)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 5.300000000000001 != 5.3\n"
+          }
+        ],
+        "error_details": [
+          {
+            "test": "test_transcription_result_processing (tests.test_comprehensive_unit_suite.TestDataModelsUnit.test_transcription_result_processing)",
+            "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\lucas\\Downloads\\VideoSubFinder_6.10_x64\\videoimage\\SoniTranslate-0.5.0\\tests\\test_comprehensive_unit_suite.py\", line 147, in test_transcription_result_processing\n    self.assertEqual(result.total_duration, 10.0)  # 11.0 - 1.0\n                     ^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\lucas\\Downloads\\VideoSubFinder_6.10_x64\\videoimage\\SoniTranslate-0.5.0\\ai_video_dubbing\\models\\data_models.py\", line 205, in total_duration\n    return self.segments[-1].end - self.segments[0].start\n           ^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'dict' object has no attribute 'end'\n"
+          }
+        ]
+      },
+      {
+        "class_name": "TestFileManagerUnit",
+        "tests_run": 4,
+        "failures": 3,
+        "errors": 1,
+        "skipped": 0,
+        "success_rate": 0.0,
+        "failure_details": [
+          {
+            "test": "test_file_corruption_detection (tests.test_comprehensive_unit_suite.TestFileManagerUnit.test_file_corruption_detection)",
+            "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\lucas\\Downloads\\VideoSubFinder_6.10_x64\\videoimage\\SoniTranslate-0.5.0\\tests\\test_comprehensive_unit_suite.py\", line 242, in test_file_corruption_detection\n    self.assertFalse(self.file_manager.is_file_corrupted(valid_file))\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: <Mock name='mock.is_file_corrupted()' id='69083368'> is not false\n"
+          },
+          {
+            "test": "test_file_size_validation (tests.test_comprehensive_unit_suite.TestFileManagerUnit.test_file_size_validation)",
+            "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\lucas\\Downloads\\VideoSubFinder_6.10_x64\\videoimage\\SoniTranslate-0.5.0\\tests\\test_comprehensive_unit_suite.py\", line 203, in test_file_size_validation\n    self.assertFalse(self.file_manager.validate_file_size(large_file, max_size_mb=5))\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: <Mock name='mock.validate_file_size()' id='69084840'> is not false\n"
+          },
+          {
+            "test": "test_supported_formats_validation (tests.test_comprehensive_unit_suite.TestFileManagerUnit.test_supported_formats_validation)",
+            "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\lucas\\Downloads\\VideoSubFinder_6.10_x64\\videoimage\\SoniTranslate-0.5.0\\tests\\test_comprehensive_unit_suite.py\", line 184, in test_supported_formats_validation\n    self.assertFalse(self.file_manager.is_supported_video_format(filename))\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: <Mock name='mock.is_supported_video_format()' id='69086128'> is not false\n"
+          }
+        ],
+        "error_details": [
+          {
+            "test": "test_temp_directory_management (tests.test_comprehensive_unit_suite.TestFileManagerUnit.test_temp_directory_management)",
+            "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\lucas\\Downloads\\VideoSubFinder_6.10_x64\\videoimage\\SoniTranslate-0.5.0\\tests\\test_comprehensive_unit_suite.py\", line 210, in test_temp_directory_management\n    self.assertTrue(os.path.exists(temp_path))\n                    ~~~~~~~~~~~~~~^^^^^^^^^^^\nTypeError: _path_exists: path should be string, bytes, os.PathLike or integer, not Mock\n"
+          }
+        ]
+      },
+      {
+        "class_name": "TestVideoProcessorUnit",
+        "tests_run": 4,
+        "failures": 0,
+        "errors": 3,
+        "skipped": 0,
+        "success_rate": 25.0,
+        "failure_details": [],
+        "error_details": [
+          {
+            "test": "test_audio_extraction_parameters (tests.test_comprehensive_unit_suite.TestVideoProcessorUnit.test_audio_extraction_parameters)",
+            "traceback": "Traceback (most recent call last):\n  File \"C:\\Program Files (x86)\\Python313-32\\Lib\\unittest\\mock.py\", line 1421, in patched\n    with self.decoration_helper(patched,\n         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^\n                                args,\n                                ^^^^^\n                                keywargs) as (newargs, newkeywargs):\n                                ^^^^^^^^^\n  File \"C:\\Program Files (x86)\\Python313-32\\Lib\\contextlib.py\", line 141, in __enter__\n    return next(self.gen)\n  File \"C:\\Program Files (x86)\\Python313-32\\Lib\\unittest\\mock.py\", line 1403, in decoration_helper\n    arg = exit_stack.enter_context(patching)\n  File \"C:\\Program Files (x86)\\Python313-32\\Lib\\contextlib.py\", line 530, in enter_context\n    result = _enter(cm)\n  File \"C:\\Program Files (x86)\\Python313-32\\Lib\\unittest\\mock.py\", line 1495, in __enter__\n    original, local = self.get_original()\n                      ~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Program Files (x86)\\Python313-32\\Lib\\unittest\\mock.py\", line 1465, in get_original\n    raise AttributeError(\n        \"%s does not have the attribute %r\" % (target, name)\n    )\nAttributeError: <module 'ai_video_dubbing.processors.video_processor' from 'C:\\\\Users\\\\lucas\\\\Downloads\\\\VideoSubFinder_6.10_x64\\\\videoimage\\\\SoniTranslate-0.5.0\\\\ai_video_dubbing\\\\processors\\\\video_processor.py'> does not have the attribute 'ffmpeg'\n"
+          },
+          {
+            "test": "test_frame_extraction_timing (tests.test_comprehensive_unit_suite.TestVideoProcessorUnit.test_frame_extraction_timing)",
+            "traceback": "Traceback (most recent call last):\n  File \"C:\\Program Files (x86)\\Python313-32\\Lib\\unittest\\mock.py\", line 1424, in patched\n    return func(*newargs, **newkeywargs)\n  File \"C:\\Users\\lucas\\Downloads\\VideoSubFinder_6.10_x64\\videoimage\\SoniTranslate-0.5.0\\tests\\test_comprehensive_unit_suite.py\", line 307, in test_frame_extraction_timing\n    self.assertGreaterEqual(len(frames), expected_frames * 0.8)  # Tolérance 20%\n                            ~~~^^^^^^^^\nTypeError: object of type 'Mock' has no len()\n"
+          },
+          {
+            "test": "test_video_audio_merge_quality (tests.test_comprehensive_unit_suite.TestVideoProcessorUnit.test_video_audio_merge_quality)",
+            "traceback": "Traceback (most recent call last):\n  File \"C:\\Program Files (x86)\\Python313-32\\Lib\\unittest\\mock.py\", line 1421, in patched\n    with self.decoration_helper(patched,\n         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^\n                                args,\n                                ^^^^^\n                                keywargs) as (newargs, newkeywargs):\n                                ^^^^^^^^^\n  File \"C:\\Program Files (x86)\\Python313-32\\Lib\\contextlib.py\", line 141, in __enter__\n    return next(self.gen)\n  File \"C:\\Program Files (x86)\\Python313-32\\Lib\\unittest\\mock.py\", line 1403, in decoration_helper\n    arg = exit_stack.enter_context(patching)\n  File \"C:\\Program Files (x86)\\Python313-32\\Lib\\contextlib.py\", line 530, in enter_context\n    result = _enter(cm)\n  File \"C:\\Program Files (x86)\\Python313-32\\Lib\\unittest\\mock.py\", line 1495, in __enter__\n    original, local = self.get_original()\n                      ~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Program Files (x86)\\Python313-32\\Lib\\unittest\\mock.py\", line 1465, in get_original\n    raise AttributeError(\n        \"%s does not have the attribute %r\" % (target, name)\n    )\nAttributeError: <module 'ai_video_dubbing.processors.video_processor' from 'C:\\\\Users\\\\lucas\\\\Downloads\\\\VideoSubFinder_6.10_x64\\\\videoimage\\\\SoniTranslate-0.5.0\\\\ai_video_dubbing\\\\processors\\\\video_processor.py'> does not have the attribute 'ffmpeg'\n"
+          }
+        ]
+      },
+      {
+        "class_name": "TestAudioProcessorUnit",
+        "tests_run": 4,
+        "failures": 1,
+        "errors": 2,
+        "skipped": 0,
+        "success_rate": 25.0,
+        "failure_details": [
+          {
+            "test": "test_vad_sensitivity_settings (tests.test_comprehensive_unit_suite.TestAudioProcessorUnit.test_vad_sensitivity_settings)",
+            "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\lucas\\Downloads\\VideoSubFinder_6.10_x64\\videoimage\\SoniTranslate-0.5.0\\tests\\test_comprehensive_unit_suite.py\", line 397, in test_vad_sensitivity_settings\n    self.assertIsInstance(intervals, list)\n    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: <Mock name='mock.detect_voice_activity()' id='71465352'> is not an instance of <class 'list'>\n"
+          }
+        ],
+        "error_details": [
+          {
+            "test": "test_source_separation_quality (tests.test_comprehensive_unit_suite.TestAudioProcessorUnit.test_source_separation_quality)",
+            "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\lucas\\Downloads\\VideoSubFinder_6.10_x64\\videoimage\\SoniTranslate-0.5.0\\tests\\test_comprehensive_unit_suite.py\", line 460, in test_source_separation_quality\n    with patch('ai_video_dubbing.processors.audio_processor.demucs') as mock_demucs:\n         ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files (x86)\\Python313-32\\Lib\\unittest\\mock.py\", line 1495, in __enter__\n    original, local = self.get_original()\n                      ~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Program Files (x86)\\Python313-32\\Lib\\unittest\\mock.py\", line 1465, in get_original\n    raise AttributeError(\n        \"%s does not have the attribute %r\" % (target, name)\n    )\nAttributeError: <module 'ai_video_dubbing.processors.audio_processor' from 'C:\\\\Users\\\\lucas\\\\Downloads\\\\VideoSubFinder_6.10_x64\\\\videoimage\\\\SoniTranslate-0.5.0\\\\ai_video_dubbing\\\\processors\\\\audio_processor.py'> does not have the attribute 'demucs'\n"
+          },
+          {
+            "test": "test_speaker_diarization_accuracy (tests.test_comprehensive_unit_suite.TestAudioProcessorUnit.test_speaker_diarization_accuracy)",
+            "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\lucas\\Downloads\\VideoSubFinder_6.10_x64\\videoimage\\SoniTranslate-0.5.0\\tests\\test_comprehensive_unit_suite.py\", line 418, in test_speaker_diarization_accuracy\n    self.assertIn(\"SPEAKER_00\", segments)\n    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files (x86)\\Python313-32\\Lib\\unittest\\case.py\", line 1171, in assertIn\n    if member not in container:\n       ^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: argument of type 'Mock' is not iterable\n"
+          }
+        ]
+      },
+      {
+        "class_name": "TestAIModelManagerUnit",
+        "tests_run": 4,
+        "failures": 2,
+        "errors": 2,
+        "skipped": 0,
+        "success_rate": 0.0,
+        "failure_details": [
+          {
+            "test": "test_model_loading_lazy (tests.test_comprehensive_unit_suite.TestAIModelManagerUnit.test_model_loading_lazy)",
+            "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\lucas\\Downloads\\VideoSubFinder_6.10_x64\\videoimage\\SoniTranslate-0.5.0\\tests\\test_comprehensive_unit_suite.py\", line 507, in test_model_loading_lazy\n    self.assertFalse(hasattr(self.ai_manager, '_whisper_model'))\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: True is not false\n"
+          },
+          {
+            "test": "test_model_memory_management (tests.test_comprehensive_unit_suite.TestAIModelManagerUnit.test_model_memory_management)",
+            "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\lucas\\Downloads\\VideoSubFinder_6.10_x64\\videoimage\\SoniTranslate-0.5.0\\tests\\test_comprehensive_unit_suite.py\", line 532, in test_model_memory_management\n    self.assertIsNone(getattr(self.ai_manager, model_attr))\n    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: <Mock name='mock._asr_model' id='71465168'> is not None\n"
+          }
+        ],
+        "error_details": [
+          {
+            "test": "test_ocr_text_extraction_quality (tests.test_comprehensive_unit_suite.TestAIModelManagerUnit.test_ocr_text_extraction_quality)",
+            "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\lucas\\Downloads\\VideoSubFinder_6.10_x64\\videoimage\\SoniTranslate-0.5.0\\tests\\test_comprehensive_unit_suite.py\", line 570, in test_ocr_text_extraction_quality\n    with patch('ai_video_dubbing.processors.ai_model_manager.PaddleOCR') as mock_ocr:\n         ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files (x86)\\Python313-32\\Lib\\unittest\\mock.py\", line 1495, in __enter__\n    original, local = self.get_original()\n                      ~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Program Files (x86)\\Python313-32\\Lib\\unittest\\mock.py\", line 1465, in get_original\n    raise AttributeError(\n        \"%s does not have the attribute %r\" % (target, name)\n    )\nAttributeError: <module 'ai_video_dubbing.processors.ai_model_manager' from 'C:\\\\Users\\\\lucas\\\\Downloads\\\\VideoSubFinder_6.10_x64\\\\videoimage\\\\SoniTranslate-0.5.0\\\\ai_video_dubbing\\\\processors\\\\ai_model_manager.py'> does not have the attribute 'PaddleOCR'\n"
+          },
+          {
+            "test": "test_transcription_accuracy_metrics (tests.test_comprehensive_unit_suite.TestAIModelManagerUnit.test_transcription_accuracy_metrics)",
+            "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\lucas\\Downloads\\VideoSubFinder_6.10_x64\\videoimage\\SoniTranslate-0.5.0\\tests\\test_comprehensive_unit_suite.py\", line 552, in test_transcription_accuracy_metrics\n    self.assertIn(\"text\", result)\n    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files (x86)\\Python313-32\\Lib\\unittest\\case.py\", line 1171, in assertIn\n    if member not in container:\n       ^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: argument of type 'Mock' is not iterable\n"
+          }
+        ]
+      }
+    ],
+    "total_tests": 23,
+    "total_failures": 7,
+    "total_errors": 9,
+    "total_skipped": 0,
+    "success_rate": 30.434782608695656,
+    "duration": 0.11505699157714844
+  }
+}
