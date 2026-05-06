@@ -622,7 +622,7 @@ class DocumentationGenerator:
                 "",
                 "---",
                 f"*FAQ mise à jour le {datetime.now().strftime('%d/%m/%Y')}*"
-            ])
+            ]
             
             with open(faq_path, 'w', encoding='utf-8') as f:
                 f.write('\n'.join(content))
@@ -785,7 +785,7 @@ class DocumentationGenerator:
                 "",
                 "---",
                 f"*Spécifications mises à jour le {datetime.now().strftime('%d/%m/%Y')}*"
-            ])
+            ]
             
             with open(specs_path, 'w', encoding='utf-8') as f:
                 f.write('\n'.join(content))
@@ -1035,7 +1035,7 @@ class DocumentationGenerator:
                 "",
                 "---",
                 f"*Guide mis à jour le {datetime.now().strftime('%d/%m/%Y')}*"
-            ])
+            ]
             
             with open(config_path, 'w', encoding='utf-8') as f:
                 f.write('\n'.join(content))

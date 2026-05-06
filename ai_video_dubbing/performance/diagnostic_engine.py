@@ -682,8 +682,9 @@ class DiagnosticEngine:
                     severity=DiagnosticSeverity.ERROR,
                     message=f"Storage diagnostic failed: {str(e)}"
                 )]
-            )    async
- def _diagnose_network(self) -> ComponentDiagnostic:
+            )
+
+    async def _diagnose_network(self) -> ComponentDiagnostic:
         """Diagnostic du réseau"""
         
         issues = []
@@ -1092,8 +1093,9 @@ class DiagnosticEngine:
                     severity=DiagnosticSeverity.ERROR,
                     message=f"CUDA diagnostic failed: {str(e)}"
                 )]
-            ) 
-   async def _diagnose_models(self) -> ComponentDiagnostic:
+            )
+
+    async def _diagnose_models(self) -> ComponentDiagnostic:
         """Diagnostic des modèles"""
         
         issues = []
@@ -1236,8 +1238,9 @@ class DiagnosticEngine:
                     severity=DiagnosticSeverity.ERROR,
                     message=f"Models diagnostic failed: {str(e)}"
                 )]
-            )    as
-ync def _diagnose_cache(self) -> ComponentDiagnostic:
+            )
+
+    async def _diagnose_cache(self) -> ComponentDiagnostic:
         """Diagnostic du système de cache"""
         
         issues = []
@@ -1394,8 +1397,9 @@ ync def _diagnose_cache(self) -> ComponentDiagnostic:
                     severity=DiagnosticSeverity.ERROR,
                     message=f"Cache diagnostic failed: {str(e)}"
                 )]
-            )    async de
-f _diagnose_performance(self) -> ComponentDiagnostic:
+            )
+
+    async def _diagnose_performance(self) -> ComponentDiagnostic:
         """Diagnostic des performances générales"""
         
         issues = []
@@ -1547,8 +1551,9 @@ f _diagnose_performance(self) -> ComponentDiagnostic:
                     severity=DiagnosticSeverity.ERROR,
                     message=f"Performance diagnostic failed: {str(e)}"
                 )]
-            )    d
-ef _calculate_overall_health_score(self, component_diagnostics: Dict[str, ComponentDiagnostic]) -> float:
+            )
+
+    def _calculate_overall_health_score(self, component_diagnostics: Dict[str, ComponentDiagnostic]) -> float:
         """Calcule le score de santé global"""
         
         if not component_diagnostics:

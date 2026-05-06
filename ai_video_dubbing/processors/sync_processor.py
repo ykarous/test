@@ -216,12 +216,14 @@ class SyncProcessor:
         Returns:
             Score de similarité (0.0 à 1.0)
         """
+        text1 = (text1 or "").lower().strip()
+        text2 = (text2 or "").lower().strip()
+
+        if not text1 and not text2:
+            return 1.0
+
         if not text1 or not text2:
             return 0.0
-        
-        # Normaliser les textes
-        text1 = text1.lower().strip()
-        text2 = text2.lower().strip()
         
         if text1 == text2:
             return 1.0
