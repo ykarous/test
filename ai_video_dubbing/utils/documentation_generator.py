@@ -479,7 +479,7 @@ class DocumentationGenerator:
                 "",
                 "---",
                 f"*Exemples générés le {datetime.now().strftime('%d/%m/%Y à %H:%M')}*"
-            ])
+            ]
             
             with open(examples_path, 'w', encoding='utf-8') as f:
                 f.write('\n'.join(content))

@@ -572,8 +572,9 @@ class DiagnosticEngine:
                     severity=DiagnosticSeverity.ERROR,
                     message=f"Memory diagnostic failed: {str(e)}"
                 )]
-            ) 
-   async def _diagnose_storage(self) -> ComponentDiagnostic:
+            )
+
+    async def _diagnose_storage(self) -> ComponentDiagnostic:
         """Diagnostic du stockage"""
         
         issues = []

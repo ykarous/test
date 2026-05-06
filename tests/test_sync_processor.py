@@ -57,8 +57,9 @@ class TestSyncProcessor:
                 confidence=0.95,
                 bounding_box={"x1": 100, "y1": 50, "x2": 200, "y2": 100}
             )
-        ]  
-  def test_init(self):
+        ]
+
+    def test_init(self):
         """Test d'initialisation du processeur."""
         processor = SyncProcessor()
         assert processor.temp_storage is None
